@@ -1,3 +1,9 @@
+# Nobel Prize Winners React App
+
+This app has only been tested in Google Chrome.
+
+## Boilerplate Documentation from Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
