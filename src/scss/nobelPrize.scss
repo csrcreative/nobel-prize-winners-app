@@ -1,0 +1,18 @@
+.nobel-prizes-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nobel-prize {
+    padding: 1rem;
+    border-bottom: 1px solid $grey;
+}
+
+.nobel-prize-info {
+    padding-bottom:0.5rem;
+}
+.nobel-prize-category {
+    text-transform: uppercase;
+    padding-right:1rem;
+}

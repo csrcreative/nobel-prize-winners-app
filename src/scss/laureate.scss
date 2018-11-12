@@ -1,0 +1,13 @@
+.laureate {
+    padding-bottom:0.5rem;
+}
+
+.laureate-motivation {
+    color: $grey-med;
+    font-style: italic;
+
+    blockquote:first-letter {
+        text-transform: capitalize;
+    }
+
+}

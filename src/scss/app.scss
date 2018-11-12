@@ -1,0 +1,22 @@
+$grey: #BAB6B5;
+$grey-med: #646464;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.flex {
+  display:flex;
+}
+
+.nobel-prizes-app {
+  max-width: 1440px;
+  margin:0 auto;
+  padding:2rem;
+}
+
+@import "nobelPrize";
+@import "laureate";
+@import "form";
