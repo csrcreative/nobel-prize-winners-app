@@ -83,18 +83,17 @@ export default class extends Component {
                 </form>
 
                 <ul className="nobel-prizes-list">
-                    {prizes.length > 0 &&
-                        prizes.map(({ category, year, laureates }, index) => {
-                            return (
-                                <NobelPrizeAlt
-                                    key={index}
-                                    category={category}
-                                    year={year}
-                                    laureates={laureates}
-                                    activeCategory = {activeFilter}
-                                />
-                            );
-                        })}
+                    {prizes.map(({ category, year, laureates }, index) => {
+                          return (
+                              <NobelPrizeAlt
+                                  key={index}
+                                  category={category}
+                                  year={year}
+                                  laureates={laureates}
+                                  activeCategory = {activeFilter}
+                              />
+                          );
+                      })}
                 </ul>
             </div>
         );
