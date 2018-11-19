@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import Header from "./components/header";
-import SelectDropdown from "./components/form/selectDropdown";
-import RadioButtons from "./components/form/radioButtons";
-import NobelPrize from "./components/nobelPrize";
-
-import "../scss/app.scss";
 import fetch from "fetch-everywhere";
 import _ from "lodash";
 
+import Header from "./components/header";
+import SelectDropdown from "./components/form/selectDropdown";
+import RadioButtons from "./components/form/radioButtons";
+import NobelPrizeAlt from "./components/nobelPrizeAlt";
+import "../scss/app.scss";
+
 export default class extends Component {
     state = {
-        prizes: false,
+        prizes: [],
         activeFilter: null,
         sort: "desc"
     };
@@ -86,7 +86,7 @@ export default class extends Component {
                     {prizes.length > 0 &&
                         prizes.map(({ category, year, laureates }, index) => {
                             return (
-                                <NobelPrize
+                                <NobelPrizeAlt
                                     key={index}
                                     category={category}
                                     year={year}

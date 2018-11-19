@@ -1,24 +1,24 @@
 import React from "react";
 import Laureate from "./laureate";
 
-function NobelPrize(props) {
-    const { activeCategory, category } = props;
+export default function NobelPrize(props) {
+    const { activeCategory, category, laureates, year } = props;
 
     if (activeCategory === null || activeCategory === category) {
       return (
           <li className="nobel-prize">
               <div className="nobel-prize-info">
-                  <span className="nobel-prize-category">{props.category}</span>
-                  <span className="nobel-prize-year">{props.year}</span>
+                  <span className="nobel-prize-category">{category}</span>
+                  <span className="nobel-prize-year">{year}</span>
               </div>
               <div className="nobel-prize-laureates">
                   <p><b>Laureates</b></p>
-                  {props.laureates.map((v, i) => {
+                  {laureates.map((laureate, index) => {
                       return (
                           <Laureate
-                              key={i}
-                              name={`${v.firstname} ${v.surname}`}
-                              motivation={v.motivation}
+                              key={index}
+                              name={`${laureate.firstname} ${laureate.surname}`}
+                              motivation={laureate.motivation}
                           />
                       );
                   })}
@@ -29,5 +29,3 @@ function NobelPrize(props) {
 
     return null;
 }
-
-export default NobelPrize;
